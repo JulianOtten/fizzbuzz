@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FizzBuzz</title>
+</head>
+
+<body>
+    <div id="output">
+
+    </div>
+    <script>
+        let output = document.getElementById("output");
+        for (let i = 1; i < 101; i++) {
+            let result;
+            let fizz = 3;
+            let buzz = 5;
+            if (i % fizz == 0) result = 'fizz';
+            else if (i % buzz == 0) result = "buzz";
+            else if (i % (fizz + buzz) == 0) result = 'fizzbuzz';
+            else result = i;
+            output.innerHTML += result + '<br>';
+        }
+    </script>
+</body>
+
+</html>
